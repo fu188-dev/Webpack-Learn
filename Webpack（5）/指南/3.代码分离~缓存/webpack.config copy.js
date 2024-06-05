@@ -31,7 +31,7 @@ module.exports = {
   optimization: { // 如果在一个 HTMl 页面上有多个入口起点，选哟设置 optimization.runtimeChunk: 'single'，否则会遇到 https://bundlers.tooling.report/code-splitting/multi-entry/ 这里描述的麻烦
     runtimeChunk: "single",
     splitChunks: {
-        chunks: "all",
+      chunks: "all", //将模块分离到单独的 bundle 中
     },
   },
 };
